@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jquerymobile by hancongcs2c</title>
+    <title>welcome | Jquerymobile by hancongcs2c</title>
 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -14,15 +14,108 @@
     <![endif]-->
   </head>
   <body>
+      <div data-role="page" id="index">
 	<div data-role="header">
 	  <h1>My first webapp</h1>
 	</div>
 	<div data-role="content">
-          <p>The main content of this page.</p>
-        </div>
-	<div data-role="footer">
+          <p>The main content of this page1.</p>
+	  <a href="#reg" data-role="button">注册</a> 
+	  <a href="#condition" data-role="button" data-rel="dialog">阅读条款</a>
+	  <a href="#contact" data-role="button">联系我们</a>
+	  <ul data-role="listview" data-inset="true" data-split-icon="check">
+	      <li data-role="list-divider">jsldfjs  jroewlvc je  eowrjower</li>
+	      <li><a href="order.html">fsd  sd fs fsdlferewrowep</a></li>
+	      <li data-icon="info"><a href="changeicon">eotu340r  ourjf jrewor3</a></li>
+	      <li data-role="list-divider">j;ajfwertwe  ewprwep  ewr</li>
+	      <li><a href="details/bill">fwe  ewruwep fslmfger</a>
+	      		<a href="edit/bill"></a>
+	      <li><a href="details/bill">fwe  ewrulmfger</a>
+	                <a href="edit/bill"></a>
+
+	  </ul>
+	</div>
+	<div data-role="footer" data-position="fixed">
           <h4>hancong9104@163.com</h4>
         </div>
+      </div>
+      <!--reg-->
+      <div data-role="page" id="reg" data-title="注册">
+        <div data-role="header">
+	  <a href="#index" data-icon="delete">取消</a>
+          <h1>注册</h1>
+	  <a href="save" data-icon="check" data-iconpos="right" data-thmem="b">保存</a>
+        </div>
+        <div data-role="content">
+	  <div data-role="collapsible">
+	    <h2>第一部分</h2>
+	  </div> 
+	  <div data-role="collapsible" data-collapsed="true">
+	    <h2>第二部分</h2>
+	    <p>第二部分内容</p>
+	  </div>
+	  <!--ui-grid-a表示2列，b三列，最多到d-->
+	  <section class="ui-grid-a">
+	    <!--ui-block-a~e-->
+	    <div class="ui-block-a">column1</div>
+	    <div class="ui-block-b">column2</div>
+	  </section>
+	  <section>
+	    <div data-role="controlgroup" data-type="horizontal">
+	      <input type="button" data-shadow="false" value="Forget me" data-inline="true">
+	      <input type="button" value="Forget me" data-inline="true">
+	      <input type="button" value="Forget me" data-inline="true">
+	    </div>
+	  </section>
+        </div>
+        <div data-role="footer" data-position="fixed" class="ui-bar">
+	  <div data-role="navbar">
+	    <ul>
+	      <li><a href="link1" data-icon="home" class="ui-btn-active">选项1</a></li>
+	      <li><a href="link1" data-icon="search">选项1</a></li>
+	      <li><a href="link1" data-icon="info">选项1</a></li>
+	      <li><a href="link1" data-icon="grid">选项1</a></li>
+	    </ul>
+	  </div>
+        </div>
+      </div><!--/reg-->
+      <!--condition-->
+      <div data-role="page" id="condition" data-title="条款">
+        <div data-role="header">
+          <h1>条款</h1>
+        </div>
+        <div data-role="content">
+	    <ol data-role="listview">
+	      <li>jsldfjs  jroewlvc je  eowrjower</li>
+	      <li>fsd  sd fs fsdlferewrowep</li>
+	      <li>eotu340r  ourjf jrewor3</li>
+	      <li>j;ajfwertwe  ewprwep  ewr</li>
+	      <li>fwe  ewruwep fslmfger</li>
+	    </ol>
+        </div>
+        <div data-role="footer">
+          <h4>hancong9104@163.com</h4>
+        </div>
+      </div><!--/condition-->
+      <!--contact-->
+      <div data-role="page" id="contact" data-title="联系我们" data-fullscreen="true" data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="e">
+        <div data-role="header" data-position="fixed">
+	  <a href="#index" data-direction="reverse">back</a>
+          <h1 data-theme="a">联系我们</h1>
+	  <a href="setting" data-icon="gear">设置</a>
+        </div>
+        <div data-role="content">
+          <p>
+		<a href="tel:+15011023400" data-role="button">呼叫兔子</a>
+		<a href="sms:+15011023400" data-role="button">给兔子送信</a>
+		<a href="sms:+15011023400?body=Hello" data-role="button">对兔子说“Hello”</a>
+		<a href="mailto:hancong9104@163.com?subject=Sent%20from%20the%2020web" data-role="button">发送主题邮件</a> 
+	  </p>
+        </div>
+        <div data-role="footer" data-position="fixed">
+          <h4>hancong9104@163.com</h4>
+        </div>
+      </div><!--/contact-->
 
   </body>
 </html>

@@ -1,0 +1,11 @@
+/*普通分辨率可使用18*18的图片，或者比18更小一些*/
+.ui-icon-myicon{
+  background-image:url(icons/myicon.png);	
+}
+/*----------高分辨率下使用比如36*36的icon图片，但仍然显示为18*18px-------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio:2){
+.ui-icon-myicon{
+  background-image:url(icons/myicon.png);
+  background-size:18px 18px;
+}	
+}
